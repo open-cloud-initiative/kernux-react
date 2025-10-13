@@ -1,0 +1,53 @@
+{
+  "name": "@open-cloud-initiative/kernux-react",
+  "version": "1.0.0",
+  "description": "Kernux Design System React Components",
+  "repository": "",
+  "author": "Sebastian Döll (@katallaxie)",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "eslintIgnore": [
+    "dist/"
+  ],
+  "scripts": {
+    "dev": "tsdown --watch",
+    "build": "tsdown",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint src --ext .ts,.tsx --report-unused-disable-directives --max-warnings 0",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "react",
+    "components",
+    "design-system",
+    "kernux",
+    "ui"
+  ],
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1"
+  },
+  "devDependencies": {
+    "@github/prettier-config": "^0.0.6",
+    "@types/react": "^18.2.23",
+    "eslint": "^9.37.0",
+    "eslint-plugin-github": "^6.0.0",
+    "react": "^18.2.0",
+    "tsdown": "^0.15.6",
+    "typescript": "^5.9.3"
+  }
+}
