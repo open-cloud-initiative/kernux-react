@@ -10,7 +10,7 @@ export default [
         ExampleElement: 'readonly',
       },
     },
-    files: ['**/*.js', '**/*.ts'],
+    files: ['**/*.js', '**/*.ts', '**/*.jsx', '**/*.tsx'],
     rules: {
       'github/unescaped-html-literal': 'off',
       'github/no-inner-html': 'off',
