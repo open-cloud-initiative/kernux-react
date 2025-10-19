@@ -1,7 +1,7 @@
 // Copyright 2025 Zentrum für Digitale Souveränität der Öffentlichen Verwaltung (ZenDiS) GmbH.
 // SPDX-License-Identifier: MIT
 
-import cn from 'clsx'
+import {clsx} from 'clsx'
 
 import type {ComponentProps, ReactElement} from 'react'
 import {forwardRef} from 'react'
@@ -27,7 +27,7 @@ export const A = forwardRef<HTMLAnchorElement, AnchorProps>(
     return (
       <ComponentToUse
         {...props}
-        className={cn('kern-link', sizeClass, props.className)}
+        className={clsx('kern-link', sizeClass, props.className)}
         ref={ref}
         href={href}
         {...(newWindow && {

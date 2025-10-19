@@ -2,8 +2,8 @@
 // SPDX-License-Identifier: MIT
 
 import {forwardRef, PropsWithChildren} from 'react'
-import {Icon} from './icon' // adjust import path as needed
-import clsx from 'clsx'
+import {Icon} from './icon'
+import {clsx} from 'clsx'
 
 type ButtonVariant = 'primary' | 'secondary' | 'tertiary'
 type IconPosition = 'left' | 'right'

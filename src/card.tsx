@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: MIT
 
 import {Button} from './button'
-import clsx from 'clsx'
+import {clsx} from 'clsx'
 
 interface Props {
   variant?: 'small' | 'large'
